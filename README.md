@@ -1,4 +1,3 @@
-The third rendition of my portfolio.
+The third rendition of my portfolio, live at `https://www.armanmoztarzadeh.com`
 
 **Built with:** React, TailwindCSS
-**Live at:** https://www.armanmoztarzadeh.com
