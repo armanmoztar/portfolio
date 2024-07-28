@@ -33,13 +33,13 @@ const ProfileHeader = ({ profilePicture }) => (
         <h1 className="text-4xl md:text-5xl font-bold mb-2">Arman Moztarzadeh</h1>
         <p className="text-xl text-gray-600 mb-4">Software Engineer. Student</p>
         <div className="flex justify-center md:justify-start space-x-4">
-          <a href="https://github.com/armanmoztar" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-black">
+          <a href="https://github.com/armanmoztar" target="_blank" rel="noopener noreferrer" >
             <GithubIcon />
           </a>
-          <a href="https://www.linkedin.com/in/arman-moztarzadeh/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-blue-600">
+          <a href="https://www.linkedin.com/in/arman-moztarzadeh/" target="_blank" rel="noopener noreferrer">
             <LinkedInIcon />
           </a>
-          <a href="assets/AMoztarzadeh_Resume.pdf" download className="text-gray-700 hover:text-blue-600">
+          <a href="/assets/AMoztarzadeh_Resume.pdf" target="_blank" download>
             <EmailIcon />
           </a>
         </div>
@@ -49,17 +49,21 @@ const ProfileHeader = ({ profilePicture }) => (
 );
 
 const AboutMe = () => (
-  <div className="bg-white rounded-lg p-6 mb-8 shadow-md">
+  <div className="bg-white rounded-lg p-6 mb-8 shadow-md text-left">
     <h2 className="text-2xl font-bold mb-4">About Me</h2>
     <p className="mb-4">
-      <span className="font-mono text-gray-800 bg-gray-100 px-2 py-1 rounded">{"{{Software Developer Intern}}"}</span> @ 🚀 Amazon
+      <span className="font-mono text-gray-800 bg-gray-100 px-2 py-1 rounded">{"{{Software Development Engineer Intern}}"}</span> @ 🚀 Amazon
     </p>
     <div className="flex flex-wrap gap-2 mb-4">
       <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded">Software Development</span>
       <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Database Systems</span>
+      <span className="bg-orange-100 text-orange-800 px-2 py-1 rounded">Cloud Development</span>
     </div>
     <p className="text-gray-700">
     Hi! My name is Arman Moztarzadeh. I'm a fourth year Mathematics and Data Science student at the University of British Columbia.
+    Currently, I am working at Amazon as a Software Engineer Intern on the Amazon Payments Team where I am working on developing MFA for Checkout in EU. 
+    I have experience working with Python, Java, JavaScript, and SQL. I am actively looking to develop new projects in my free time, 
+    and am always looking for new opportunities to learn and grow.
     </p>
   </div>
 );
@@ -74,7 +78,7 @@ const companyLogos = {
 
 const ExperienceItem = ({ company, role, period, responsibilities }) => (
   <div className="mb-6 text-left">
-    <div className="flex items-center mb-2 text-left">
+    <div className="flex items-center mb-2">
       {companyLogos[company] && (
         <img src={companyLogos[company]} alt={company} className="h-[20px] mr-4 object-cover" />
       )}
@@ -83,7 +87,7 @@ const ExperienceItem = ({ company, role, period, responsibilities }) => (
         <p className="text-gray-600">{period}</p>
       </div>
     </div>
-    <ul className="list-disc pl-12 text-gray-700 text-left">
+    <ul className="list-disc pl-12 text-gray-700">
       {responsibilities.map((item, index) => (
         <li key={index}>{item}</li>
       ))}
@@ -92,8 +96,8 @@ const ExperienceItem = ({ company, role, period, responsibilities }) => (
 );
 
 const Experience = () => (
-  <div className="bg-white rounded-lg p-6 mb-8 shadow-md">
-    <h2 className="text-xl font-bold mb-4 text-left">Professional Experience</h2>
+  <div className="bg-white rounded-lg p-6 mb-8 shadow-md text-left">
+    <h2 className="text-xl font-bold mb-4">Professional Experience</h2>
     <ExperienceItem 
       company="Amazon" 
       role="Software Development Engineer Intern" 
@@ -115,7 +119,7 @@ const Experience = () => (
      <ExperienceItem 
       company="UBC" 
       role="Undergraduate Teaching Assistant" 
-      period="Sep 2022 - Dec 2022"
+      period="Sep 2023 - Apr 2024"
       responsibilities={[
         "Developed a course assignment to compare the performance of AWS EMR single-node and multi-node clusters for big data processing tasks, providing insights into cluster optimization strategies",
         "Collaborated with a Ph.D. student on the development of an autograder using NLP-based ML models",
@@ -134,7 +138,7 @@ const Experience = () => (
     />
      <ExperienceItem 
       company="Porton Health" 
-      role="Junior Developer" 
+      role="Software Engineer Intern" 
       period="Sep 2022 - Dec 2022"
       responsibilities={[
         "Enhanced existing applications by introducing new functionalities and features using JavaScript, and Node.js",
@@ -169,7 +173,8 @@ const Portfolio = () => {
           z-index: -10;
           height: 100%;
           width: 100%;
-          background: radial-gradient(125% 125% at 50% 10%, white 40%, blue 100%);
+       background: linear-gradient(0deg, rgba(34,63,195,0.352000175070028) 0%, rgba(27,145,255,0) 100%);
+          
         }
         .background-container::after {
           content: '';
