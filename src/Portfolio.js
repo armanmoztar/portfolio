@@ -102,13 +102,15 @@ const AboutMe = () => (
       </span>
     </div>
     <p className="text-gray-700">
-      Hi! My name is Arman Moztarzadeh. I'm a fourth year undergraduate student at the University of British Columbia studying mathematics and data science.
-      Currently, I am working at Amazon as a Software Engineer Intern on the Amazon Payments
-      Team where I'm developing a MFA flow for UK customers at Checkout using TypeScript and JavaScript.
-        <br></br>
-        <br></br>
-      I love running and hiking in my free time, especially discovering new places in the beauties of British Columbia.
-      I'm also an avid skiier and enjoy spending time on the slopes during the winter months.
+      Hi! My name is Arman Moztarzadeh. I'm a fourth year undergraduate student
+      at the University of British Columbia studying mathematics and data
+      science. Currently, I am working at Amazon as a Software Engineer Intern
+      on the Amazon Payments Team where I'm developing a MFA flow for UK
+      customers at Checkout using TypeScript and JavaScript.
+      <br></br>
+      <br></br>I love running and hiking in my free time, especially discovering
+      new places in the beauties of British Columbia. I'm also an avid skiier
+      and enjoy spending time on the slopes during the winter months.
     </p>
   </div>
 );
@@ -153,9 +155,7 @@ const Experience = () => (
       company="Amazon"
       role="Software Development Engineer Intern"
       period="June 2024 - Present"
-      responsibilities={[
-        "Scheduled for a term on the Amazon Payments Team",
-      ]}
+      responsibilities={["Scheduled for a term on the Amazon Payments Team"]}
     />
     <ExperienceItem
       company="Government of Canada"
