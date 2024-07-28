@@ -184,7 +184,7 @@ const Experience = () => (
       responsibilities={[
         "Collaborated closely with the testing team to develop and execute advanced automated test scripts using C# and Selenium, leading to a 10% performance enhancement as measured by LoadRunner benchmarks",
         "Leveraged VMware and Google Cloud platforms to architect and manage virtual testing environments",
-        "Developed 8 Python scripts utilizing pandas and numpy to automate critical tasks including extracting archive log data and generating CSV reports",
+        "Developed Python scripts utilizing pandas and numpy to automate critical tasks including extracting archive log data and generating CSV reports",
       ]}
     />
     <ExperienceItem
