@@ -1,11 +1,14 @@
+import React, { useState, useCallback } from "react";
+
 import Amazon from "./img/amazon.png";
 import GovernmentOfCanada from "./img/government_of_canada.png";
 import UBC from "./img/ubc.png";
 import Optum from "./img/optum.png";
 import PortonHealth from "./img/porton_health.png";
+import Placeholder from "./img/placeholder.png";
 import ProfilePicture from "./img/profile_picture.JPG";
 
-// Icons
+// Intro icons
 const GithubIcon = () => (
   <svg
     height="32"
@@ -99,13 +102,13 @@ const AboutMe = () => (
       </span>
     </div>
     <p className="text-gray-700">
-      Hi! My name is Arman Moztarzadeh. I'm a fourth year Mathematics and Data
-      Science student at the University of British Columbia. Currently, I am
-      working at Amazon as a Software Engineer Intern on the Amazon Payments
-      Team where I am working on developing MFA for Checkout in EU. I have
-      experience working with Python, Java, JavaScript, and SQL. I am actively
-      looking to develop new projects in my free time, and am always looking for
-      new opportunities to learn and grow.
+      Hi! My name is Arman Moztarzadeh. I'm a fourth year undergraduate student at the University of British Columbia studying mathematics and data science.
+      Currently, I am working at Amazon as a Software Engineer Intern on the Amazon Payments
+      Team where I'm developing a MFA flow for UK customers at Checkout using TypeScript and JavaScript.
+        <br></br>
+        <br></br>
+      I love running and hiking in my free time, especially discovering new places in the beauties of British Columbia.
+      I'm also an avid skiier and enjoy spending time on the slopes during the winter months.
     </p>
   </div>
 );
@@ -135,7 +138,7 @@ const ExperienceItem = ({ company, role, period, responsibilities }) => (
         <p className="text-gray-600">{period}</p>
       </div>
     </div>
-    <ul className="list-disc pl-12 text-gray-700">
+    <ul className="list-disc pl-8 text-gray-700">
       {responsibilities.map((item, index) => (
         <li key={index}>{item}</li>
       ))}
@@ -145,12 +148,14 @@ const ExperienceItem = ({ company, role, period, responsibilities }) => (
 
 const Experience = () => (
   <div className="bg-white rounded-lg p-6 mb-8 shadow-md text-left">
-    <h2 className="text-xl font-bold mb-4">Professional Experience</h2>
+    <h2 className="text-xl font-bold mb-4">Experiences</h2>
     <ExperienceItem
       company="Amazon"
       role="Software Development Engineer Intern"
       period="June 2024 - Present"
-      responsibilities={["Scheduled for a term on the Amazon Payments Team"]}
+      responsibilities={[
+        "Scheduled for a term on the Amazon Payments Team",
+      ]}
     />
     <ExperienceItem
       company="Government of Canada"
@@ -195,6 +200,146 @@ const Experience = () => (
   </div>
 );
 
+const ProjectCard = ({ project, onClick }) => (
+  <div
+    className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer"
+    onClick={onClick}
+  >
+    <img
+      src={project.image}
+      alt={project.title}
+      className="w-full h-48 object-cover"
+    />
+    <div className="p-4">
+      <h3 className="font-bold text-lg mb-2">{project.title}</h3>
+      <p className="text-gray-600">{project.shortDescription}</p>
+    </div>
+  </div>
+);
+
+const ProjectModal = ({ project, onClose }) => {
+  const handleOutsideClick = useCallback(
+    (e) => {
+      if (e.target === e.currentTarget) {
+        onClose();
+      }
+    },
+    [onClose],
+  );
+
+  return (
+    <div
+      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 text-left"
+      onClick={handleOutsideClick}
+    >
+      <div
+        className="bg-white p-6 rounded-lg max-w-2xl w-full m-4"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button onClick={onClose} className="float-right font-bold text-2xl">
+          &times;
+        </button>
+        <h2 className="text-2xl font-bold mb-4">{project.title}</h2>
+        <p className="mb-4">{project.fullDescription}</p>
+        <p className="text-gray-600 mb-4">{project.date}</p>
+        {project.image && (
+          <div className="mb-4">
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-auto rounded-lg shadow-md"
+            />
+          </div>
+        )}
+        <ul className="list-disc pl-5 mb-4">
+          {project.bulletPoints.map((point, index) => (
+            <li key={index}>{point}</li>
+          ))}
+        </ul>
+        <div className="flex justify-end space-x-4">
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-700 hover:text-black"
+            >
+              <GithubIcon />
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const projects = [
+    {
+      title: "Portfolio Diversification Model",
+      image: Placeholder, // TODO: Update image
+      date: "Oct 2023 - Dec 2023",
+      shortDescription:
+        "Reinforcement Learning algorithms for financial data analysis and forecasting",
+      bulletPoints: [
+        "Employed the Upper Confidence Bound (UCB) algorithm using Python to evaluate stock performance and generate investment recommendations tailored to user-defined risk tolerance and historical performance",
+        "Helped with the development of the Keras Long Short-Term Memory (LSTM) model for time series forecasting, a critical feature to enhance the project's predictive capabilities",
+        "Worked on the integration of the Vector Auto Regression (VAR) model for financial trend forecasting, enabling the system to provide insights into future market movements",
+      ],
+      github: "https://github.com/armanmoztar/Portfolio-Diversification-Model",
+    },
+    {
+      title: "BC Cancer Ticket Management System",
+      image: Placeholder, // TODO: Update image
+      date: "Oct 2022 - Apr 2023",
+      shortDescription: "Ticket management system for BC Cancer stakeholders",
+      bulletPoints: [
+        "Developed a laboratory management system as part of UBC Launch Pad and actively met with organizational stakeholders",
+        "Developed routes and models to load questions into SQL database",
+        "Wrote unit tests for question routes using Jest",
+        "Implemented Load and Delete questions saga using Redux and Axios Library",
+      ],
+      github: "https://github.com/ubclaunchpad/labby",
+    },
+    {
+      title: "Posture Fix",
+      image: Placeholder, // TODO: Update image
+      date: "Jan 2022 - Feb 2022",
+      shortDescription:
+        "Chrome extension to alert users to adjust their posture",
+      bulletPoints: [
+        "Published and developed a chrome extension that alerts users to adjust their posture while they work",
+        "Utilized JavaScript and CSS to create a user-friendly interface that provides feedback on posture",
+        "Implemented a timer to alert users to take a break and fix their posture every 30 minutes",
+      ],
+      github: "https://github.com/armanmoztar/posture-fix",
+    },
+  ];
+
+  return (
+    <div className="mb-8">
+      <h2 className="text-2xl font-bold mb-4 text-left">Projects</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            project={project}
+            onClick={() => setSelectedProject(project)}
+          />
+        ))}
+      </div>
+      {selectedProject && (
+        <ProjectModal
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+      )}
+    </div>
+  );
+};
+
 const Portfolio = () => {
   return (
     <div className="min-h-screen relative overflow-hidden">
@@ -203,6 +348,7 @@ const Portfolio = () => {
         <ProfileHeader profilePicture={ProfilePicture} />
         <AboutMe />
         <Experience />
+        <Projects />
       </div>
 
       {/* Custom background styles */}
