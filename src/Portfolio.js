@@ -1,12 +1,15 @@
 import React, { useState, useCallback } from "react";
 
 import Amazon from "./img/amazon.png";
-import GovernmentOfCanada from "./img/government_of_canada.png";
+import GovernmentOfCanada from "./img/government-of-canada.png";
 import UBC from "./img/ubc.png";
 import Optum from "./img/optum.png";
-import PortonHealth from "./img/porton_health.png";
-import Placeholder from "./img/placeholder.png";
-import ProfilePicture from "./img/profile_picture.JPG";
+import PortonHealth from "./img/porton-health.png";
+import ProfilePicture from "./img/profile-picture.JPG";
+
+import portfolioDiversificationModel from "./img/portfolio-diversification-model.png";
+import labby from "./img/labby.png";
+import postureFix from "./img/posture-fix.png";
 
 // Intro icons
 const GithubIcon = () => (
@@ -279,7 +282,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Portfolio Diversification Model",
-      image: Placeholder, // TODO: Update image
+      image: portfolioDiversificationModel,
       date: "Oct 2023 - Dec 2023",
       shortDescription:
         "Reinforcement Learning algorithms for financial data analysis and forecasting",
@@ -292,7 +295,7 @@ const Projects = () => {
     },
     {
       title: "BC Cancer Ticket Management System",
-      image: Placeholder, // TODO: Update image
+      image: labby,
       date: "Oct 2022 - Apr 2023",
       shortDescription: "Ticket management system for BC Cancer stakeholders",
       bulletPoints: [
@@ -305,7 +308,7 @@ const Projects = () => {
     },
     {
       title: "Posture Fix",
-      image: Placeholder, // TODO: Update image
+      image: postureFix,
       date: "Jan 2022 - Feb 2022",
       shortDescription:
         "Chrome extension to alert users to adjust their posture",
