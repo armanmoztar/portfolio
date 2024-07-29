@@ -178,7 +178,7 @@ const Experience = () => (
         "Developed a course assignment to compare the performance of AWS EMR single-node and multi-node clusters for big data processing tasks, providing insights into cluster optimization strategies",
         "Collaborated with a Ph.D. student on the development of an autograder using NLP-based ML models",
         "Provided feedback in editing and reviewing course assignments related to AWS, Azure, and Docker",
-        "Provided assistance to 100+ computer science and data science students to help them understand cloud concepts"
+        "Provided assistance to 100+ computer science and data science students to help them understand cloud concepts",
       ]}
     />
     <ExperienceItem
@@ -369,7 +369,11 @@ const Portfolio = () => {
           z-index: -10;
           height: 100%;
           width: 100%;
-background: linear-gradient(0deg, rgba(34,112,195,0.47524947478991597) 0%, rgba(110,255,27,0) 100%);
+          background: linear-gradient(
+            0deg,
+            rgba(34, 112, 195, 0.47524947478991597) 0%,
+            rgba(110, 255, 27, 0) 100%
+          );
         }
         .background-container::after {
           content: "";
