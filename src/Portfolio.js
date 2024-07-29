@@ -133,7 +133,7 @@ const ExperienceItem = ({ company, role, period, responsibilities }) => (
         <img
           src={companyLogos[company]}
           alt={company}
-          className="h-[20px] mr-4 object-cover"
+          className="h-[24px] mr-4 object-cover"
         />
       )}
       <div>
@@ -143,7 +143,7 @@ const ExperienceItem = ({ company, role, period, responsibilities }) => (
         <p className="text-gray-600">{period}</p>
       </div>
     </div>
-    <ul className="list-disc pl-8 text-gray-700">
+    <ul className="list-disc pl-4 text-gray-700">
       {responsibilities.map((item, index) => (
         <li key={index}>{item}</li>
       ))}
@@ -178,6 +178,7 @@ const Experience = () => (
         "Developed a course assignment to compare the performance of AWS EMR single-node and multi-node clusters for big data processing tasks, providing insights into cluster optimization strategies",
         "Collaborated with a Ph.D. student on the development of an autograder using NLP-based ML models",
         "Provided feedback in editing and reviewing course assignments related to AWS, Azure, and Docker",
+        "Provided assistance to 100+ computer science and data science students to help them understand cloud concepts"
       ]}
     />
     <ExperienceItem
