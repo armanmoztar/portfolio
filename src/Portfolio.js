@@ -368,11 +368,7 @@ const Portfolio = () => {
           z-index: -10;
           height: 100%;
           width: 100%;
-          background: linear-gradient(
-            0deg,
-            rgba(34, 63, 195, 0.352000175070028) 0%,
-            rgba(27, 145, 255, 0) 100%
-          );
+background: linear-gradient(0deg, rgba(34,112,195,0.47524947478991597) 0%, rgba(110,255,27,0) 100%);
         }
         .background-container::after {
           content: "";
