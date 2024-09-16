@@ -87,12 +87,12 @@ const ProfileHeader = ({ profilePicture }) => (
 const AboutMe = () => (
   <div className="bg-white rounded-lg p-6 mb-8 shadow-md text-left">
     <h2 className="text-2xl font-bold mb-4">About Me</h2>
-    <p className="mb-4">
+    {/* <p className="mb-4">
       <span className="font-mono text-gray-800 bg-gray-100 px-2 py-1 rounded">
         {"{{Software Development Engineer Intern}}"}
       </span>{" "}
       @ 🚀 Amazon
-    </p>
+    </p> */}
     <div className="flex flex-wrap gap-2 mb-4">
       <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded">
         Software Development
