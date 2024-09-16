@@ -107,12 +107,10 @@ const AboutMe = () => (
     <p className="text-gray-700">
       Hi! My name is Arman Moztarzadeh. I'm a fourth year undergraduate student
       at the University of British Columbia studying mathematics and data
-      science. Currently, I am working at Amazon as a Software Engineer Intern
-      on the Amazon Payments Team where I'm developing a MFA flow for UK
-      customers at Checkout using TypeScript and JavaScript.
+      science.
       <br></br>
       <br></br>I love running and hiking in my free time, especially discovering
-      new places in the beauties of British Columbia. I'm also an avid skiier
+      new places in the beauties of British Columbia. I'm also an avid skier
       and enjoy spending time on the slopes during the winter months.
     </p>
   </div>
@@ -158,7 +156,11 @@ const Experience = () => (
       company="Amazon"
       role="Software Development Engineer Intern"
       period="June 2024 - Present"
-      responsibilities={["Scheduled for a term on the Amazon Payments Team"]}
+      responsibilities={[
+        "Developed a full-stack workflow for credit card multi-factor authentication (MFA) for UK retail checkout using React, enhancing payment security for over millions of customers.",
+        "Implemented a 'checkout' use case in TypeScript for the team's testing sandbox, utilizing AWS SAM and AWS Lambda to test the workflow with various inputs",
+        "Introduced two APIs to handle payment authorization, enabling seamless experimentation with minimal disruption to the existing codebase."
+      ]}
     />
     <ExperienceItem
       company="Government of Canada"
