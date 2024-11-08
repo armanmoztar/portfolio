@@ -154,12 +154,13 @@ const Experience = () => (
     <h2 className="text-xl font-bold mb-4">Experiences</h2>
     <ExperienceItem
       company="Amazon"
-      role="Software Development Engineer Intern"
-      period="June 2024 - Present"
+      role="Software Engineer Intern"
+      period="June 2024 - September 2024"
       responsibilities={[
         "Developed a full-stack workflow for credit card multi-factor authentication (MFA) for UK retail checkout using React, enhancing payment security for over millions of customers.",
         "Implemented a 'checkout' use case in TypeScript for the team's testing sandbox, utilizing AWS SAM and AWS Lambda to test the workflow with various inputs",
         "Introduced two APIs to handle payment authorization, enabling seamless experimentation with minimal disruption to the existing codebase.",
+        "Collaborated with 3+ teams across Payments, including one across time zones, improving project completion time."
       ]}
     />
     <ExperienceItem
@@ -178,7 +179,6 @@ const Experience = () => (
       period="Sep 2023 - Apr 2024"
       responsibilities={[
         "Developed a course assignment to compare the performance of AWS EMR single-node and multi-node clusters for big data processing tasks, providing insights into cluster optimization strategies",
-        "Collaborated with a Ph.D. student on the development of an autograder using NLP-based ML models",
         "Provided feedback in editing and reviewing course assignments related to AWS, Azure, and Docker",
         "Provided assistance to 100+ computer science and data science students to help them understand cloud concepts",
       ]}
@@ -200,7 +200,6 @@ const Experience = () => (
       responsibilities={[
         "Enhanced existing applications by introducing new functionalities and features using JavaScript, and Node.js",
         "Tested and debugged over 35 components using MongoDB and documented workflow",
-        "Worked closely with UI designers and senior engineers to develop and implement market-ready email templates for the health platform",
       ]}
     />
   </div>
