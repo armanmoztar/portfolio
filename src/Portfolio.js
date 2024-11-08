@@ -160,7 +160,7 @@ const Experience = () => (
         "Developed a full-stack workflow for credit card multi-factor authentication (MFA) for UK retail checkout using React, enhancing payment security for over millions of customers.",
         "Implemented a 'checkout' use case in TypeScript for the team's testing sandbox, utilizing AWS SAM and AWS Lambda to test the workflow with various inputs",
         "Introduced two APIs to handle payment authorization, enabling seamless experimentation with minimal disruption to the existing codebase.",
-        "Collaborated with 3+ teams across Payments, including one across time zones, improving project completion time."
+        "Collaborated with 3+ teams across Payments, including one across time zones, improving project completion time.",
       ]}
     />
     <ExperienceItem
