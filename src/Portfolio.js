@@ -65,6 +65,7 @@ const ProfileHeader = ({ profilePicture }) => (
             href="https://github.com/armanmoztar"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub"
           >
             <GithubIcon />
           </a>
@@ -72,10 +73,16 @@ const ProfileHeader = ({ profilePicture }) => (
             href="https://www.linkedin.com/in/arman-moztarzadeh/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
             <LinkedInIcon />
           </a>
-          <a href="/assets/AMoztarzadeh_Resume.pdf" target="_blank" download>
+          <a
+            href="/assets/AMoztarzadeh_Resume.pdf"
+            target="_blank"
+            aria-label="Resume"
+            download
+          >
             <EmailIcon />
           </a>
         </div>
