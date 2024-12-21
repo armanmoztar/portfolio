@@ -59,7 +59,9 @@ const ProfileHeader = ({ profilePicture }) => (
         <h1 className="text-4xl md:text-5xl font-bold mb-2">
           Arman Moztarzadeh
         </h1>
-        <p className="text-xl text-gray-600 mb-4">Software Engineer. Student</p>
+        <p className="text-xl text-gray-600 mb-4">
+          software engineer, student, (aspiring) cook
+        </p>
         <div className="flex justify-center md:justify-start space-x-4">
           <a
             href="https://github.com/armanmoztar"
@@ -160,7 +162,6 @@ const Experience = () => (
         "Developed a full-stack workflow for credit card multi-factor authentication (MFA) for UK retail checkout using React, enhancing payment security for over millions of customers.",
         "Implemented a 'checkout' use case in TypeScript for the team's testing sandbox, utilizing AWS SAM and AWS Lambda to test the workflow with various inputs",
         "Introduced two APIs to handle payment authorization, enabling seamless experimentation with minimal disruption to the existing codebase.",
-        "Collaborated with 3+ teams across Payments, including one across time zones, improving project completion time.",
       ]}
     />
     <ExperienceItem
