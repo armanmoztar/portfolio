@@ -77,7 +77,12 @@ const ProfileHeader = ({ profilePicture }) => (
           >
             <LinkedInIcon />
           </a>
-          <a href="/assets/AMoztarzadeh_Resume.pdf" target="_blank" download>
+          <a
+            href="/assets/AMoztarzadeh_Resume.pdf"
+            target="_blank"
+            download
+            aria-label="Download Resume"
+          >
             <EmailIcon />
           </a>
         </div>
