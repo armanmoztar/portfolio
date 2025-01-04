@@ -357,42 +357,6 @@ const Portfolio = () => {
         <Projects />
       </div>
 
-      {/* Custom background styles */}
-      <style jsx>{`
-        .background-container {
-          position: absolute;
-          inset: 0;
-          z-index: -1;
-        }
-        .background-container::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          z-index: -10;
-          height: 100%;
-          width: 100%;
-          background: linear-gradient(
-            0deg,
-            rgba(34, 112, 195, 0.47524947478991597) 0%,
-            rgba(110, 255, 27, 0) 100%
-          );
-        }
-        .background-container::after {
-          content: "";
-          position: absolute;
-          inset: 0;
-          z-index: -9;
-          height: 100%;
-          width: 100%;
-          background-size: 20px 20px;
-          mask-image: radial-gradient(
-            ellipse 80% 50% at 50% 0%,
-            #000 70%,
-            transparent 110%
-          );
-        }
-      `}</style>
-
       {/* Background container */}
       <div className="background-container"></div>
     </div>
