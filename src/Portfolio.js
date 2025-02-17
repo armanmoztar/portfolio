@@ -7,6 +7,7 @@ import Optum from "./img/optum.png";
 import PortonHealth from "./img/porton-health.png";
 import ProfilePicture from "./img/profile-picture.JPG";
 
+import forum from "./img/forum.png";
 import portfolioDiversificationModel from "./img/portfolio-diversification-model.png";
 import labby from "./img/labby.png";
 import postureFix from "./img/posture-fix.png";
@@ -36,17 +37,6 @@ const LinkedInIcon = () => (
   </svg>
 );
 
-const EmailIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="32"
-    height="32"
-    viewBox="0 0 512 512"
-  >
-    <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7 .3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2 .4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" />
-  </svg>
-);
-
 const FileIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -70,6 +60,9 @@ const ProfileHeader = ({ profilePicture }) => (
         <h1 className="text-4xl md:text-5xl font-bold mb-2">
           Arman Moztarzadeh
         </h1>
+        <h2 className="text-md italic  text-gray-500">
+          Email: me@armanmoztarzadeh.com
+        </h2>
         <p className="text-xl text-gray-600 mb-4">
           software engineer, student, (aspiring) cook
         </p>
@@ -89,14 +82,7 @@ const ProfileHeader = ({ profilePicture }) => (
             <LinkedInIcon />
           </a>
           <a
-            href="mailto:me@armanmoztarzadeh.com"
-            target="_blank"
-            aria-label="Send Email"
-          >
-            <EmailIcon />
-          </a>
-          <a
-            href="/assets/ArmanMoztarzadehResume.pdf"
+            href="/assets/AMoztarzadeh_Resume.pdf"
             target="_blank"
             download
             aria-label="Download Resume"
@@ -182,7 +168,7 @@ const Experience = () => (
       role="Software Engineer Intern"
       period="June 2024 - September 2024"
       responsibilities={[
-        "Developed a full-stack workflow for credit card multi-factor authentication (MFA) for UK retail checkout using React, enhancing payment security for over millions of customers.",
+        "Developed a full-stack workflow for credit card multi-factor authentication (MFA) for UK retail checkout using React, enhancing payment security by 20%",
         "Implemented a 'checkout' use case in TypeScript for the team's testing sandbox, utilizing AWS SAM and AWS Lambda to test the workflow with various inputs",
         "Introduced two APIs to handle payment authorization, enabling seamless experimentation with minimal disruption to the existing codebase.",
       ]}
@@ -306,6 +292,18 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projects = [
+    {
+      title: "ForumAI",
+      image: forum,
+      date: "Sep 2024 - Present",
+      shortDescription:
+        "ForumAI combines AI capabilities with structured academic forums, enabling students and faculty to collaborate in a controlled environment where AI assists learning while maintaining academic integrity.",
+      bulletPoints: [
+        "Co-lead of a team of 14 members in developing ForumAI, an AI-powered academic forum that enhances structured discussions and document interaction",
+        "Designed and implemented advanced AI features, integrating Retrieval Augmented Generation (RAG) to optimize knowledge retrieval and improve student engagement",
+      ],
+      github: "https://github.com/ubclaunchpad/forum",
+    },
     {
       title: "Portfolio Diversification Model",
       image: portfolioDiversificationModel,
