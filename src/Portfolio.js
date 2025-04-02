@@ -1,16 +1,16 @@
 import React, { useState, useCallback } from "react";
 
-import Amazon from "./img/amazon.png";
-import GovernmentOfCanada from "./img/government-of-canada.png";
-import UBC from "./img/ubc.png";
-import Optum from "./img/optum.png";
-import PortonHealth from "./img/porton-health.png";
+import Amazon from "./img/companies/amazon.png";
+import GovernmentOfCanada from "./img/companies/government-of-canada.png";
+import UBC from "./img/companies/ubc.png";
+import Optum from "./img/companies/optum.png";
+import PortonHealth from "./img/companies/porton-health.png";
 import ProfilePicture from "./img/profile-picture.JPG";
 
-import forum from "./img/forum.png";
-import portfolioDiversificationModel from "./img/portfolio-diversification-model.png";
-import labby from "./img/labby.png";
-import postureFix from "./img/posture-fix.png";
+import forum from "./img/projects/forum.png";
+import portfolioDiversificationModel from "./img/projects/portfolio-diversification-model.png";
+import labby from "./img/projects/labby.png";
+import postureFix from "./img/projects/posture-fix.png";
 
 // Intro icons
 const GithubIcon = () => (
@@ -64,7 +64,7 @@ const ProfileHeader = ({ profilePicture }) => (
           Email: me@armanmoztarzadeh.com
         </h2>
         <p className="text-xl text-gray-600 mb-4">
-          software engineer, student, (aspiring) cook
+          software engineer & student
         </p>
         <div className="flex justify-center md:justify-start space-x-4">
           <a
@@ -98,12 +98,6 @@ const ProfileHeader = ({ profilePicture }) => (
 const AboutMe = () => (
   <div className="bg-white rounded-lg p-6 mb-8 shadow-md text-left">
     <h2 className="text-2xl font-bold mb-4">About Me</h2>
-    {/* <p className="mb-4">
-      <span className="font-mono text-gray-800 bg-gray-100 px-2 py-1 rounded">
-        {"{{Software Development Engineer Intern}}"}
-      </span>{" "}
-      @ 🚀 Amazon
-    </p> */}
     <div className="flex flex-wrap gap-2 mb-4">
       <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded">
         Software Development
@@ -116,7 +110,7 @@ const AboutMe = () => (
       </span>
     </div>
     <p className="text-gray-700">
-      Hi! My name is Arman Moztarzadeh. I'm a fourth year undergraduate student
+      Hi! My name is Arman. I'm a fourth year undergraduate student
       at the University of British Columbia studying mathematics and data
       science.
       <br></br>
@@ -127,13 +121,34 @@ const AboutMe = () => (
   </div>
 );
 
-const companyLogos = {
-  Amazon: Amazon,
-  "Government of Canada": GovernmentOfCanada,
-  Optum: Optum,
-  UBC: UBC,
-  "Porton Health": PortonHealth,
-};
+const companies = [
+  {
+    name: "Amazon",
+    logo: Amazon,
+  },
+  {
+    name: "Government of Canada",
+    logo: GovernmentOfCanada,
+  },
+  {
+    name: "UBC",
+    logo: UBC,
+  },
+  {
+    name: "Optum",
+    logo: Optum,
+  },
+  {
+    name: "Porton Health",
+    logo: PortonHealth,
+  },
+];
+
+const companyLogos = companies.reduce((acc, { name, logo }) => {
+  acc[name] = logo;
+  return acc;
+}
+, {});
 
 const ExperienceItem = ({ company, role, period, responsibilities }) => (
   <div className="mb-6 text-left">
@@ -163,6 +178,14 @@ const ExperienceItem = ({ company, role, period, responsibilities }) => (
 const Experience = () => (
   <div className="bg-white rounded-lg p-6 mb-8 shadow-md text-left">
     <h2 className="text-xl font-bold mb-4">Experiences</h2>
+    <ExperienceItem
+      company="Amazon"
+      role="Software Engineer Intern"
+      period="May 2025"
+      responsibilities={[
+        "Returning to Amazon on International Stores",
+      ]}
+    />
     <ExperienceItem
       company="Amazon"
       role="Software Engineer Intern"
@@ -295,7 +318,7 @@ const Projects = () => {
     {
       title: "ForumAI",
       image: forum,
-      date: "Sep 2024 - Present",
+      date: "Sep 2024 - April 2025",
       shortDescription:
         "ForumAI combines AI capabilities with structured academic forums, enabling students and faculty to collaborate in a controlled environment where AI assists learning while maintaining academic integrity.",
       bulletPoints: [
