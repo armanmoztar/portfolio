@@ -110,9 +110,8 @@ const AboutMe = () => (
       </span>
     </div>
     <p className="text-gray-700">
-      Hi! My name is Arman. I'm a fourth year undergraduate student
-      at the University of British Columbia studying mathematics and data
-      science.
+      Hi! My name is Arman. I'm a fourth year undergraduate student at the
+      University of British Columbia studying mathematics and data science.
       <br></br>
       <br></br>I love running and hiking in my free time, especially discovering
       new places in the beauties of British Columbia. I'm also an avid skier and
@@ -147,8 +146,7 @@ const companies = [
 const companyLogos = companies.reduce((acc, { name, logo }) => {
   acc[name] = logo;
   return acc;
-}
-, {});
+}, {});
 
 const ExperienceItem = ({ company, role, period, responsibilities }) => (
   <div className="mb-6 text-left">
@@ -182,9 +180,7 @@ const Experience = () => (
       company="Amazon"
       role="Software Engineer Intern"
       period="May 2025"
-      responsibilities={[
-        "Returning to Amazon on International Stores",
-      ]}
+      responsibilities={["Returning to Amazon on International Stores"]}
     />
     <ExperienceItem
       company="Amazon"
