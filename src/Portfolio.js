@@ -9,7 +9,6 @@ import UBC from "./img/companies/ubc.png";
 import Optum from "./img/companies/optum.png";
 import PortonHealth from "./img/companies/porton-health.png";
 
-
 import forum from "./img/projects/forum.png";
 import portfolioDiversificationModel from "./img/projects/portfolio-diversification-model.png";
 import labby from "./img/projects/labby.png";
@@ -124,7 +123,7 @@ const AboutMe = () => (
 );
 
 const companies = [
-   {
+  {
     name: "Meta",
     logo: Meta,
   },
@@ -196,7 +195,7 @@ const Experience = () => (
       responsibilities={[
         "Developing a full-stack workflow to process deals and promotions for Business customers using React, TypeScript, and AWS",
         "Implementing a new Query workflow for Cross Border Promotions using AWS Lambda, and DynamoDB, improving the query speed by 70%",
-        "Worked on implementing a new frontend feature to display query results using React, and TypeScript"
+        "Worked on implementing a new frontend feature to display query results using React, and TypeScript",
       ]}
     />
     <ExperienceItem
