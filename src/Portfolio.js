@@ -1,11 +1,14 @@
 import React, { useState, useCallback } from "react";
 
+import ProfilePicture from "./img/profile-picture.JPG";
+
+import Meta from "./img/companies/meta.png";
 import Amazon from "./img/companies/amazon.png";
 import GovernmentOfCanada from "./img/companies/government-of-canada.png";
 import UBC from "./img/companies/ubc.png";
 import Optum from "./img/companies/optum.png";
 import PortonHealth from "./img/companies/porton-health.png";
-import ProfilePicture from "./img/profile-picture.JPG";
+
 
 import forum from "./img/projects/forum.png";
 import portfolioDiversificationModel from "./img/projects/portfolio-diversification-model.png";
@@ -64,7 +67,7 @@ const ProfileHeader = ({ profilePicture }) => (
           Email: me@armanmoztarzadeh.com
         </h2>
         <p className="text-xl text-gray-600 mb-4">
-          software engineer & student
+          software engineer, student, and outdoor enthusiast
         </p>
         <div className="flex justify-center md:justify-start space-x-4">
           <a
@@ -121,6 +124,10 @@ const AboutMe = () => (
 );
 
 const companies = [
+   {
+    name: "Meta",
+    logo: Meta,
+  },
   {
     name: "Amazon",
     logo: Amazon,
@@ -177,10 +184,20 @@ const Experience = () => (
   <div className="bg-white rounded-lg p-6 mb-8 shadow-md text-left">
     <h2 className="text-xl font-bold mb-4">Experiences</h2>
     <ExperienceItem
+      company="Meta"
+      role="Production Engineer Intern | MLH Fellow"
+      period="June 2025"
+      responsibilities={["Fellowship through MLH | Summer 2025"]}
+    />
+    <ExperienceItem
       company="Amazon"
       role="Software Engineer Intern"
       period="May 2025"
-      responsibilities={["Returning to Amazon on International Stores"]}
+      responsibilities={[
+        "Developing a full-stack workflow to process deals and promotions for Business customers using React, TypeScript, and AWS",
+        "Implementing a new Query workflow for Cross Border Promotions using AWS Lambda, and DynamoDB, improving the query speed by 70%",
+        "Worked on implementing a new frontend feature to display query results using React, and TypeScript"
+      ]}
     />
     <ExperienceItem
       company="Amazon"
