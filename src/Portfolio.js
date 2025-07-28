@@ -191,7 +191,7 @@ const Experience = () => (
     <ExperienceItem
       company="Amazon"
       role="Software Engineer Intern"
-      period="May 2025"
+      period="May 2025 - July 2025"
       responsibilities={[
         "Developing a full-stack workflow to process deals and promotions for Business customers using React, TypeScript, and AWS",
         "Implementing a new Query workflow for Cross Border Promotions using AWS Lambda, and DynamoDB, improving the query speed by 70%",
