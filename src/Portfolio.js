@@ -115,9 +115,22 @@ const AboutMe = () => (
       Hi! My name is Arman. I'm an undergraduate student at the University of
       British Columbia studying mathematics and data science.
       <br></br>
-      <br></br>I love running and hiking in my free time, especially discovering
-      new places in the beauties of British Columbia. I'm also an avid skier and
-      enjoy spending time on the slopes during the winter months.
+      <br></br>I love running and hiking, especially discovering new places in
+      the beauties of British Columbia. One of my main goals for 2026 is to be
+      able to run the full BMO marathon in May. I'm also an avid skier and enjoy
+      spending time on the slopes during the winter months.
+      <br></br>
+      Lastly, I enjoy playing the piano and guitar in my free time. You can see
+      some of my old piano videos{" "}
+      <a
+        href="https://www.youtube.com/watch?v=EF9zPU_6sdI"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-600 hover:text-blue-800 underline"
+      >
+        here
+      </a>
+      .
     </p>
   </div>
 );
