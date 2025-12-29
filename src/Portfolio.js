@@ -120,6 +120,7 @@ const AboutMe = () => (
       able to run the full BMO marathon in May. I'm also an avid skier and enjoy
       spending time on the slopes during the winter months.
       <br></br>
+      <br></br>
       Lastly, I enjoy playing the piano and guitar in my free time. You can see
       some of my old piano videos{" "}
       <a
