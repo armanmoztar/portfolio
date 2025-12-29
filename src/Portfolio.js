@@ -112,8 +112,8 @@ const AboutMe = () => (
       </span>
     </div>
     <p className="text-gray-700">
-      Hi! My name is Arman. I'm a fourth year undergraduate student at the
-      University of British Columbia studying mathematics and data science.
+      Hi! My name is Arman. I'm an undergraduate student at the University of
+      British Columbia studying mathematics and data science.
       <br></br>
       <br></br>I love running and hiking in my free time, especially discovering
       new places in the beauties of British Columbia. I'm also an avid skier and
@@ -193,9 +193,9 @@ const Experience = () => (
       role="Software Engineer Intern"
       period="May 2025 - July 2025"
       responsibilities={[
-        "Developing a full-stack workflow to process deals and promotions for Business customers using React, TypeScript, and AWS",
-        "Implementing a new Query workflow for Cross Border Promotions using AWS Lambda, and DynamoDB, improving the query speed by 70%",
-        "Worked on implementing a new frontend feature to display query results using React, and TypeScript",
+        "Designed and implemented a Java-based backend model and schema for a REST API supporting scalable Query Promotions services for Amazon Business.",
+        "Developed a serverless Cross-Border Promotions query workflow for Amazon Business using AWS Lambda and API Gateway, reducing query latency by 70%.",
+        "Built a new frontend React component to display query results and extract data to CSV format using React and TypeScript, improving usability for 100+ internal stakeholders.",
       ]}
     />
     <ExperienceItem
@@ -203,9 +203,9 @@ const Experience = () => (
       role="Software Engineer Intern"
       period="June 2024 - September 2024"
       responsibilities={[
-        "Developed a full-stack workflow for credit card multi-factor authentication (MFA) for UK retail checkout using React, enhancing payment security by 20%",
-        "Implemented a 'checkout' use case in TypeScript for the team's testing sandbox, utilizing AWS SAM and AWS Lambda to test the workflow with various inputs",
-        "Introduced two APIs to handle payment authorization, enabling seamless experimentation with minimal disruption to the existing codebase.",
+        "Optimized a React-based global dashboard used in UK retail checkout flows, improving payment security by 20% across high-traffic checkout paths.",
+        "Implemented a checkout use case in TypeScript for the team's testing sandbox using AWS SAM and AWS Lambda, enabling automated testing across 15+ input scenarios and reducing manual QA time by 30%.",
+        "Spearheaded the design and implementation of 2 REST APIs to handle payment authorization within a cloud-native architecture, enabling seamless experimentation with minimal disruption to the existing codebase.",
       ]}
     />
     <ExperienceItem
@@ -213,9 +213,9 @@ const Experience = () => (
       role="Software Engineer Intern"
       period="Jan 2024 - Apr 2024"
       responsibilities={[
-        "Led the development of 7 features using Python and MongoDB, improving application functionality and supporting a major infrastructure upgrade",
-        "Utilized MongoDB to query through the production database, contributing to the deprecation of 9 legacy codebase elements and modernizing the system for improved maintainability",
-        "Created detailed Confluence documentation related to development, facilitating future employee onboarding",
+        "Led the development of 7 features using Python and MongoDB, improving application functionality and supporting a major infrastructure upgrade.",
+        "Wrote optimized MongoDB aggregation queries with indexing, processing collections of over 5 million documents and significantly improving query performance in critical admin dashboards.",
+        "Created detailed Confluence documentation related to development, facilitating future employee onboarding.",
       ]}
     />
     <ExperienceItem
@@ -223,9 +223,9 @@ const Experience = () => (
       role="Undergraduate Teaching Assistant"
       period="Sep 2023 - Apr 2024"
       responsibilities={[
-        "Developed a course assignment to compare the performance of AWS EMR single-node and multi-node clusters for big data processing tasks, providing insights into cluster optimization strategies",
-        "Provided feedback in editing and reviewing course assignments related to AWS, Azure, and Docker",
-        "Provided assistance to 100+ computer science and data science students to help them understand cloud concepts",
+        "Developed a course assignment to compare the performance of AWS EMR single-node and multi-node clusters for big data processing tasks, providing insights into cluster optimization strategies.",
+        "Provided feedback in editing and reviewing course assignments related to AWS, Azure, and Docker.",
+        "Provided assistance to 100+ computer science and data science students to help them understand cloud concepts.",
       ]}
     />
     <ExperienceItem
@@ -233,9 +233,9 @@ const Experience = () => (
       role="Software Engineer in Test Co-op"
       period="May 2023 - Dec 2023"
       responsibilities={[
-        "Collaborated closely with the testing team to develop and execute advanced automated test scripts using C# and Selenium, leading to a 10% performance enhancement as measured by LoadRunner benchmarks",
-        "Leveraged VMware and Google Cloud platforms to architect and manage virtual testing environments",
-        "Developed Python scripts utilizing pandas and numpy to automate critical tasks including extracting archive log data and generating CSV reports",
+        "Collaborated closely with the testing team to develop and execute advanced automated test scripts using C# and Selenium, leading to a 10% performance enhancement as measured by LoadRunner benchmarks.",
+        "Leveraged VMware and Google Cloud platforms to architect and manage virtual testing environments.",
+        "Developed 8 Python scripts utilizing pandas and numpy to automate critical tasks including extracting archive log data and generating CSV reports.",
       ]}
     />
     <ExperienceItem
@@ -243,8 +243,8 @@ const Experience = () => (
       role="Software Engineer Intern"
       period="Sep 2022 - Dec 2022"
       responsibilities={[
-        "Enhanced existing applications by introducing new functionalities and features using JavaScript, and Node.js",
-        "Tested and debugged over 35 components using MongoDB and documented workflow",
+        "Secured existing web applications by integrating user authentication features utilizing JavaScript and Node.js, reducing unauthorized access attempts by 40% and improving application security.",
+        "Tested and debugged over 35 components using MongoDB and documented workflow.",
       ]}
     />
   </div>
