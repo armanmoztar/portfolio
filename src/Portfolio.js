@@ -237,9 +237,9 @@ const Experience = () => (
       role="Undergraduate Teaching Assistant"
       period="Sep 2023 - Apr 2024"
       responsibilities={[
-        "Developed a course assignment to compare the performance of AWS EMR single-node and multi-node clusters for big data processing tasks, providing insights into cluster optimization strategies.",
-        "Provided feedback in editing and reviewing course assignments related to AWS, Azure, and Docker.",
-        "Provided assistance to 100+ computer science and data science students to help them understand cloud concepts.",
+        "Designed and developed an AWS EMR performance benchmarking assignment comparing single-node and multi-node clusters for large-scale data processing, analyzing cluster optimization trade-offs.",
+        "Reviewed and provided technical feedback on assignments involving AWS, Azure, and Docker, reinforcing best practices for cloud-native and distributed systems.",
+        "Supported 100+ computer science and data science students in understanding cloud computing and distributed systems concepts.",
       ]}
     />
     <ExperienceItem
