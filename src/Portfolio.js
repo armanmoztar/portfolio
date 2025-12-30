@@ -259,6 +259,7 @@ const Experience = () => (
       responsibilities={[
         "Secured existing web applications by integrating user authentication features utilizing JavaScript and Node.js, reducing unauthorized access attempts by 40% and improving application security.",
         "Tested and debugged over 35 components using MongoDB and documented workflow.",
+        "Collaborated with UI designers and senior engineers to develop and deploy production-ready email templates for a healthcare platform.",
       ]}
     />
   </div>
