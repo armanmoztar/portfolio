@@ -199,7 +199,7 @@ const Experience = () => (
     <ExperienceItem
       company="Meta"
       role="Production Engineer Intern | MLH Fellow"
-      period="June 2025"
+      period="June 2025 - September 2025"
       responsibilities={["Fellowship through MLH | Summer 2025"]}
     />
     <ExperienceItem
